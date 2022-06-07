@@ -26,6 +26,7 @@ export default Footer
 
 const Wrapper = styled.div`
     display: flex;
+    justify-content: space-around;
     padding: 2rem;
     width: 90%;
     margin: auto;

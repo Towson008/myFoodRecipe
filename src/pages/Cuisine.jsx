@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import { Link, useParams } from "react-router-dom";
 
+
 function Cuisine() {
   const [cuisine, setCuisine] = useState([]);
   let params = useParams();
@@ -24,8 +25,10 @@ function Cuisine() {
       {cuisine.map((item) => {
         return (
           <Card key={item.id}>
+            <Link to={'/recipe/+recipe.id'}>
             <img src={item.image} alt={item.title} />
             <h4>{item.title}</h4>
+            </Link>
           </Card>
         );
       })}
