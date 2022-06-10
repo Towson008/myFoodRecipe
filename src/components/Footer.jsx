@@ -22,8 +22,6 @@ function Footer() {
   )
 }
 
-export default Footer
-
 const Wrapper = styled.div`
     display: flex;
     justify-content: space-around;
@@ -40,3 +38,5 @@ const FLink = styled(NavLink)`
      text-decoration: none;
      cursor: pointer;
 `
+
+export default Footer
